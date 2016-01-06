@@ -1,6 +1,8 @@
+import com.sun.glass.ui.SystemClipboard;
 import com.sun.tools.javac.util.ArrayUtils;
 
 import java.util.Scanner;
+import java.util.Stack;
 import java.util.StringJoiner;
 
 /**
@@ -14,26 +16,28 @@ public class AlternatingString {
 
         int count = 0;
 
+        int[] output = new int[inputNumbers];
         while (count < inputNumbers){
+            int flag = 0;
+
             String inputString = in.next();
-            char[] output = new char[inputString.length()];
-            int j = 0;
-            int i = 0;
-            while (i < inputString.length()-1){
-                if(inputString.charAt(i) != inputString.charAt(i+1)){
-                    output[j] = inputString.charAt(i);
-                    j++;
-                    i++;
-                }
-                else if (i+1 == inputString.length()){
-                    output[j] = inputString.charAt(i+1);
+
+
+            Stack sc = new Stack();
+            sc.push(inputString.charAt(0));
+
+            for(int i = 1; i<inputString.length(); i++){
+                if((Character)sc.peek()== inputString.charAt(i)){
+                    flag++;
                 } else{
-                    i++;
+                    sc.push(inputString.charAt(i));
                 }
             }
-            for(int k = 0; k<output.length; k++){
-                System.out.println(output[k]);
-            }
+            output[count] = flag;
+            count++;
+        }
+        for(int i = 0; i<output.length; i++){
+            System.out.println(output[i]);
         }
     }
 }
