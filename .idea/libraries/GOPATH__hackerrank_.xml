@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;hackerrank&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/zart/go/src/gitlab.com" />
+      <root url="file://$USER_HOME$/zart/go/src/github.com" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/zart/go/src/gitlab.com" />
+      <root url="file://$USER_HOME$/zart/go/src/github.com" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$/java8" />
+      <root url="file://$PROJECT_DIR$/hackerearth" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/string" />
+    </excluded>
+  </library>
+</component>

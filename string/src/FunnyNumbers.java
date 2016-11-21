@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 /**
@@ -21,7 +22,7 @@ public class FunnyNumbers {
                 if(Math.abs(inputString.charAt(i+1) - inputString.charAt(i)) !=
                         Math.abs(reversedString.charAt(i+1) - reversedString.charAt(i))){
 
-                    System.out.println("Not Funny");
+                    System.out.println("Not Funny" + 2);
 
                     flag = false;
 

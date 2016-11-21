@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;main&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/flipkart/go/src/gopkg.in" />
+      <root url="file://$USER_HOME$/flipkart/go/src/github.com" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/main" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$PROJECT_DIR$/../careercup" />
+    </excluded>
+  </library>
+</component>
